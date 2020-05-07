@@ -2,7 +2,8 @@ import React from "react";
 import "../custom.css";
 import MainDetails from "./MainDetails";
 
-export default function PageDetails() {
+export default function PageDetails(props) {
+  const urlID = props.url.props;
   return (
     <div className="tab-content " id="nav-tabContent">
       <div
@@ -51,9 +52,7 @@ export default function PageDetails() {
         role="tabpanel"
         aria-labelledby="nav-location-tab"
       >
-        <div className="row p0 mt-4">
-          <MainDetails />
-        </div>
+        <MainDetails id={urlID} />
       </div>
       <div
         className="tab-pane fade"
