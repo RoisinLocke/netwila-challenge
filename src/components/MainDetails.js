@@ -8,9 +8,6 @@ import Map from "./Map";
 import CustomerDetails from "./CustomerDetails";
 
 const MainDetails = (props) => {
-  //TODO:
-  // 4) map
-
   const urlParams = props.id;
   const [locations, updateLocations] = useState([]);
   const [mainLocation, updateMainLocation] = useState("");
