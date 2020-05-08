@@ -32,7 +32,6 @@ const MainDetails = (props) => {
         updateMainLocation(resp.data);
       };
       getMain();
-      console.log("loop1");
     } else {
       const getMain = async () => {
         const resp = await axios.get(
@@ -41,7 +40,6 @@ const MainDetails = (props) => {
         updateMainLocation(resp.data);
       };
       getMain();
-      console.log("loop2");
     }
   }, [urlParams]);
 
